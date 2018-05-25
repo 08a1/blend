@@ -1,0 +1,107 @@
+body {
+	font: 1em/1.5 sans-serif;
+	margin: auto;
+	padding: 1em;
+	max-width: 40em;
+}
+
+h1 {
+	font: bold 1.25em/1 sans-serif;
+}
+
+form {
+	position: relative;
+}
+
+label {
+	position: absolute;
+	display: block;
+	width: 100%;
+	padding: 10%;
+	text-align: center;
+	box-sizing: border-box;
+	color: #999;
+}
+
+input {
+	position: relative;
+	margin: 0;
+	background: rgba(0, 0, 0, 0.04);
+	display: block;
+	font: inherit;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	border: 0.25em #ccc dashed;
+	border-radius: 0.25em;
+	padding: 25% 5%;
+}
+
+input:hover {
+	border-color: #999;
+}
+
+input:active {
+	border-color: #09f;
+}
+
+input:focus {
+	outline: none;
+}
+
+button {
+	background: #09f;
+	border: none;
+	padding: 0.5em;
+	font: inherit;
+	color: #fff;
+	border-radius: 0.125em;
+	cursor: pointer;
+}
+
+button:hover,
+button:active,
+button:focus {
+	background: #999;
+}
+
+a:link,
+a:visited {
+	color: #09f;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #999;
+}
+
+samp {
+	display: block;
+	white-space: pre;
+	overflow: auto;
+	padding: 1em;
+	background: #eee;
+	animation: oscillate 0.5s 2;
+}
+
+strong {
+	color: #e01;
+	padding: 0.5em;
+	background: #fee;
+	border: 0.25em solid #fcc;
+}
+
+
+@keyframes oscillate {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(1deg);
+	}
+	75% {
+		transform: rotate(-1deg);
+	}
+}
